@@ -14,7 +14,9 @@ Accurate diagnosis prediction relies on analyzing the symptoms reported by indiv
 
 <b>Real-time Feedback with Heroku Integration</b>:
 The Symptom Checker API provides real-time feedback, allowing users to receive immediate predictions based on their reported symptoms. Integrated with the Heroku cloud platform, this API ensures seamless scalability and responsiveness, accommodating high user demand. With Heroku's automatic scaling and monitoring capabilities, we can deliver reliable symptom predictions and optimize performance. Improve user experience and decision-making with the SymptomCheckerAPI and its Heroku integration.
+
 ![Screenshot (363)](https://github.com/FaisalDH/python-shc-model/assets/109041188/8fbff788-c2fb-4af8-ba31-ad6e6d11328d)
+
 
 
 <b>Conclusion</b>:
