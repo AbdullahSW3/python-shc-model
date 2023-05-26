@@ -38,16 +38,11 @@ def nameRoute():
         user_id = secrets.token_hex(16)
         user_responses[user_id] = class_probabilities
         
-        return jsonify({'user_id': user_id})
-    
-    else:
-        user_id = request.args.get('user_id')
-        
         if user_id in user_responses:
             response = user_responses[user_id]
             return jsonify({'name': response})
         else:
-            return jsonify({'error': 'Invalid user_id'})
+            return jsonify({'name': 'Invalid user_id'})
 
 if __name__ == "__main__":
     app.run(debug=False)
