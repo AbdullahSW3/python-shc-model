@@ -34,7 +34,7 @@ def nameRoute():
         class_probabilities = dict(zip(class_labels, prob[0]))
         session['response'] = class_probabilities
 
-        return "class_probabilities"
+        return class_probabilities
     else:
         response = session.get('response', {})
         return jsonify({'name': response})
