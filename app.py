@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 user_responses = {}
 
-@app.route('/name', methods=["GET", "POST"])
+@app.route('/name', methods=["POST"])
 def nameRoute():
     if request.method == "POST":
         request_data = request.data
