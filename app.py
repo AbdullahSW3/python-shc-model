@@ -11,7 +11,6 @@ import secrets
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
-app.secret_key = secrets.token_hex(16)
 
 @app.route('/name', methods=["GET", "POST"])
 def nameRoute():
@@ -32,8 +31,7 @@ def nameRoute():
         class_labels = predictor.classes_
         disease = value[0]
         class_probabilities = dict(zip(class_labels, prob[0]))
-        session['response'] = class_probabilities
-        response = session.get('response', {})
+        response = class_probabilities
         return jsonify({'name': response})
 
 if __name__ == "__main__":
